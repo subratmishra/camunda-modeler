@@ -37,13 +37,6 @@ module.exports = function(grunt) {
       unit: { }
     },
 
-    browserify: {
-      client: {
-        src: 'lib/index.js',
-        target: '../public/index.js'
-      }
-    },
-
     copy: {
       html: {
         files: [
@@ -111,7 +104,6 @@ module.exports = function(grunt) {
   grunt.registerTask('auto-test', [ 'karma:unit' ]);
 
   grunt.registerTask('build-client', [
-    'browserify:client',
     'less',
     'copy'
   ]);
@@ -123,7 +115,6 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('auto-build', [
-    'browserify:client:watch',
     'less',
     'copy',
     'watch'
