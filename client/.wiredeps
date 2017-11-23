@@ -158,36 +158,15 @@
     "cmmn-js": {
       "version": "bpmn-io/cmmn-js",
       "requires": {
-        "cmmn-moddle": "0.3.4",
-        "diagram-js": "0.18.4",
-        "diagram-js-direct-editing": "0.17.1",
+        "cmmn-moddle": "1.0.0",
+        "diagram-js": "bpmn-io/diagram-js",
+        "diagram-js-direct-editing": "bpmn-io/diagram-js-direct-editing",
         "ids": "0.2.0",
         "inherits": "2.0.3",
         "lodash": "3.10.1",
-        "min-dom": "0.2.0",
+        "min-dom": "0.3.0",
         "object-refs": "0.1.1",
         "tiny-svg": "0.1.3"
-      },
-      "dependencies": {
-        "diagram-js": {
-          "version": "0.18.4",
-          "requires": {
-            "didi": "0.1.1",
-            "hammerjs": "2.0.8",
-            "inherits": "2.0.3",
-            "lodash": "3.10.1",
-            "min-dom": "0.2.0",
-            "object-refs": "0.1.1",
-            "tiny-svg": "0.1.3"
-          }
-        },
-        "diagram-js-direct-editing": {
-          "version": "0.17.1",
-          "requires": {
-            "lodash": "3.10.1",
-            "min-dom": "0.2.0"
-          }
-        }
       }
     },
     "cmmn-js-properties-panel": {
@@ -196,7 +175,7 @@
         "ids": "0.2.0",
         "inherits": "2.0.3",
         "lodash": "3.10.1",
-        "min-dom": "0.2.0",
+        "min-dom": "0.3.0",
         "scroll-tabs": "0.2.1",
         "selection-update": "0.1.2"
       }
@@ -205,25 +184,8 @@
       "version": "bpmn-io/cmmn-moddle",
       "requires": {
         "lodash": "3.10.1",
-        "moddle": "0.8.0",
-        "moddle-xml": "0.12.0"
-      },
-      "dependencies": {
-        "moddle": {
-          "version": "0.8.0",
-          "requires": {
-            "lodash": "3.10.1"
-          }
-        },
-        "moddle-xml": {
-          "version": "0.12.0",
-          "requires": {
-            "lodash": "3.10.1",
-            "moddle": "0.8.0",
-            "sax": "0.6.1",
-            "tiny-stack": "0.1.0"
-          }
-        }
+        "moddle": "1.2.1",
+        "moddle-xml": "2.1.1"
       }
     },
     "codemirror": {
@@ -585,17 +547,17 @@
       }
     },
     "moddle": {
-      "version": "1.0.0",
+      "version": "1.2.1",
       "requires": {
         "lodash": "3.10.1"
       }
     },
     "moddle-xml": {
-      "version": "1.0.0",
+      "version": "2.1.1",
       "requires": {
         "lodash": "3.10.1",
         "moddle": "1.0.0",
-        "sax": "0.6.1",
+        "saxen": "5.4.1",
         "tiny-stack": "0.1.0"
       }
     },
@@ -685,8 +647,8 @@
         "align-text": "0.1.4"
       }
     },
-    "sax": {
-      "version": "0.6.1"
+    "saxen": {
+      "version": "5.4.1"
     },
     "scroll-tabs": {
       "version": "0.2.1",
