@@ -15,9 +15,9 @@
     "test": "run-p *:test",
     "auto-test": "run-p *:auto-test",
     "clean": "grunt clean",
-    "all": "run-s clean client:all \"app:all -- {@}\" --",
+    "all": "NODE_ENV=production run-s clean client:all \"app:all -- {@}\" --",
     "distro": "grunt distro",
-    "dev": "run-p *:dev",
+    "dev": "NODE_ENV=development run-p *:dev",
     "postinstall": "(cd client && npm install)",
     "release": "np --no-publish"
   },
