@@ -4,7 +4,7 @@
     "object-curly-spacing": [ 2, "always"],
     "space-before-blocks": [ 2, "always"],
     "indent": [ 2, 2, { "VariableDeclarator": { "var": 2, "let": 2, "const": 3 } } ],
-    "no-unused-vars": [ 2, { "args": "none" } ],
+    "no-unused-vars": [ 2, { "args": "none", "varsIgnorePattern": "^h$" } ],
     "space-before-function-paren": [ 2, "never" ],
     "quotes": [ 2, "single" ],
     "react/jsx-no-undef": 1,
@@ -23,8 +23,9 @@
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
       "jsx": true
-    },
+    }
   },
   "plugins": [
     "react",
