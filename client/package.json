@@ -8,27 +8,8 @@
     "all": "grunt",
     "dev": "grunt auto-build"
   },
-  "browserify": {
-    "transform": [
-      "babelify",
-      [
-        "stringify",
-        {
-          "extensions": [
-            ".bpmn",
-            ".dmn",
-            ".cmmn",
-            ".xml",
-            ".css",
-            ".svg",
-            ".png"
-          ]
-        }
-      ]
-    ]
-  },
   "dependencies": {
-    "bpmn-js": "^0.25.1",
+    "bpmn-js": "^0.25.2",
     "bpmn-js-properties-panel": "^0.18.4",
     "camunda-bpmn-moddle": "^0.13.0",
     "camunda-cmmn-moddle": "^0.3.0",
@@ -41,6 +22,7 @@
     "diagram-js-minimap": "^0.5.4",
     "diagram-js-origin": "^0.15.2",
     "dmn-js": "^0.11.0",
+    "dmn-moddle": "^1.0.0",
     "domify": "^1.4.0",
     "domready": "^1.0.8",
     "drag-tabs": "^0.1.0",
@@ -51,18 +33,26 @@
     "lodash": "^3.10.1",
     "min-dom": "^0.2.0",
     "next-tick": "^0.2.2",
+    "preact": "^8.2.6",
+    "prop-types": "^15.6.0",
     "raf": "^3.1.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
     "scroll-tabs": "^0.2.0",
     "virtual-dom": "^2.1.1",
     "virtual-hook": "^1.0.1",
     "vtree-select": "^2.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.2.0",
     "babel-preset-env": "^1.6.0",
-    "babelify": "^7.2.0",
-    "browserify": "^13.0.0",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
     "chai": "^4.1.2",
+    "envify": "^4.1.0",
     "errorify": "^0.3.1",
     "eslint": "^2.1.0",
     "eslint-plugin-mocha": "^2.0.0",
@@ -90,6 +80,6 @@
     "sinon-chai": "^2.14.0",
     "stringify": "^5.1.0",
     "time-grunt": "^1.3.0",
-    "watchify": "^3.7.0"
+    "watchify": "^3.9.0"
   }
 }

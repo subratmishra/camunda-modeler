@@ -1,7 +1,7 @@
 'use strict';
 
-var browser = require('util/browser'),
-    isMac = require('util/is-mac');
+var browser = require('../util/browser'),
+    isMac = require('../util/is-mac');
 
 var ShortcutsFix = require('./shortcuts-fix');
 

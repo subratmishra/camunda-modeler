@@ -359,8 +359,8 @@ BpmnEditor.prototype.getModeler = function() {
     });
 
     // log errors into log
-    this.modeler.on('error', 1500, (error) => {
-      this.emit('log', [[ 'error', error.error ]]);
+    this.modeler.on('error', 1500, ({ error }) => {
+      this.emit('log', [[ 'error', error ]]);
       this.emit('log:toggle', { open: true });
     });
 

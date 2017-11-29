@@ -1,6 +1,6 @@
 'use strict';
 
-var isInput = require('util/dom/is-input').isInput;
+var isInput = require('../util/dom/is-input').isInput;
 
 var domClosest = require('min-dom/lib/closest');
 

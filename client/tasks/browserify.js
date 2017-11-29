@@ -34,7 +34,6 @@ module.exports = function(grunt) {
         events: require.resolve('events/')
       },
       ignoreMissing: true,
-      paths: ['lib'],
       insertGlobalVars: {
         process: function() {
           return 'undefined';
@@ -42,7 +41,22 @@ module.exports = function(grunt) {
         Buffer: function() {
           return 'undefined';
         }
-      }
+      },
+      transform: [
+        [ 'babelify', { global: true } ],
+        [ 'stringify', {
+          'extensions': [
+            '.bpmn',
+            '.dmn',
+            '.cmmn',
+            '.xml',
+            '.css',
+            '.svg',
+            '.png'
+          ]
+        } ],
+        [ 'envify', { global: true } ]
+      ]
     };
 
     var b;

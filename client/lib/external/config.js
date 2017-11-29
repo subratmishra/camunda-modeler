@@ -2,7 +2,7 @@
 
 var inherits = require('inherits');
 
-var browser = require('util/browser');
+var browser = require('../util/browser');
 
 var BaseConfig = require('../base/config');
 

@@ -1,6 +1,6 @@
 'use strict';
 
-var browser = require('util/browser');
+var browser = require('../util/browser');
 
 /**
  * File system API used by app.

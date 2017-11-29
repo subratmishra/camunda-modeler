@@ -1,6 +1,4 @@
-'use strict';
-
-function getParent(element, className, depth) {
+export default function getParent(element, className, depth) {
 
   var targetClassName;
 
@@ -22,5 +20,3 @@ function getParent(element, className, depth) {
 
   return null;
 }
-
-module.exports = getParent;

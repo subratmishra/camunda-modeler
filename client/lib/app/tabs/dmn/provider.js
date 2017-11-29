@@ -46,8 +46,7 @@ function DmnProvider(options) {
       fileType: 'dmn',
       name: 'diagram_' + createdFiles + '.dmn',
       path: isUnsaved.PATH,
-      contents: xml,
-      loadDiagram: !attrs.isTable
+      contents: xml
     };
   };
 

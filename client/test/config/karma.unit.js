@@ -84,6 +84,9 @@ module.exports = function(karma) {
       paths: [
         absoluteLibPath,
         absoluteBasePath
+      ],
+      transform: [
+        [ 'envify', { global: true } ]
       ]
     }
   });

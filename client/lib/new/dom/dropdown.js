@@ -1,7 +1,4 @@
-'use strict';
-
-var getParent = require('util/dom/get-parent');
-
+import getParent from './get-parent';
 
 /**
  * Generic drop down functionality that may be used
@@ -19,7 +16,7 @@ var getParent = require('util/dom/get-parent');
  *
  * @return {Function} mouseDown initializer for dropdown
  */
-function dropdown(parent) {
+export default function dropdown(parent) {
 
   var el, activeDropdown;
 
@@ -92,6 +89,4 @@ function dropdown(parent) {
   }
 
   return down;
-}
-
-module.exports = dropdown;
+};

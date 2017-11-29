@@ -1,6 +1,6 @@
 'use strict';
 
-var slice = require('util/slice');
+var slice = require('../util/slice');
 
 var inherits = require('inherits');
 

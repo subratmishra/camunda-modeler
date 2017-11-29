@@ -8,7 +8,7 @@ var EventEmitter = require('events');
 
 var isArray = require('lodash/lang/isArray');
 
-var slice = require('util/slice');
+var slice = require('../util/slice');
 
 
 /**
