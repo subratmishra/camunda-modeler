@@ -128,7 +128,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('auto-test', [ 'karma:unit' ]);
 
-  grunt.registerTask('build-client', [
+  grunt.registerTask('build', [
     'browserify:client',
     'less',
     'copy'
@@ -136,7 +136,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', [
     'test',
-    'build-client'
+    'build'
   ]);
 
   grunt.registerTask('auto-build', [
