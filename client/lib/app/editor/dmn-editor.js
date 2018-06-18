@@ -206,10 +206,9 @@ DmnEditor.prototype.getModeler = function() {
       this.initialState.importing = false;
     });
 
-    // hook up with modeler change events
-    // TODO(nikku): hook up with change events?
-
     var updateState = (options = {}) => (event) => {
+      console.log('%cUPDATING STATE', 'background: yellow');
+
       this.updateState(options, event);
     };
 
@@ -218,6 +217,8 @@ DmnEditor.prototype.getModeler = function() {
     this.modeler.on('view.contentChanged', updateState({ contentChanged: true }));
 
     this.modeler.on('view.selectionChanged', updateState());
+    
+    this.modeler.on('view.directEditingChanged', updateState());
 
     // log editor errors
     // log errors into log
